@@ -9,7 +9,7 @@ Master is usually preferred due to having more features, but stable is usually l
 
 #### Installing Discord.js Master
 
-Now, you'll later find out that should you install discord.js Stable from npm, at the time of writing, that the help command will give you an error whenever it is used. This is due to a bug in the way messages are split on Stable. To avoid this, I recommend you go ahead and install Discord.js master as well: 
+Now, you'll later find out that should you install discord.js Stable from npm, at the time of writing, that the help command will give you an error whenever it is used. This is due to a bug in the way messages are split on Stable. To avoid this, I recommend you go ahead and install Discord.js master as well:
 
 `npm i -S hydrabolt/discord.js`
 
@@ -19,7 +19,7 @@ While it doesn't have to be called `index.js`, the index file is your main file 
 
 First thing is to require Commando. Contrary to what you may think, you do **not** need to require Discord.js to use Commando. That is, unless you are going to use a RichEmbed, but more on that later.
 
-For now, simple require Commando. We'll also be requiring `path` for use later on. Don't worry, you don't have to install `path`.
+For now, simply require Commando. We'll also be requiring `path` for use later on. Don't worry, you don't have to install `path`.
 
 ```js
 const commando = require('discord.js-commando');
@@ -129,7 +129,7 @@ client.registry
     .registerDefaultGroups()
     .registerDefaultCommands()
     .registerCommandsIn(path.join(__dirname, 'commands'));
-    
+
 client.once('ready', () => {
     console.log('Logged in!');
     client.user.setGame('Game');
