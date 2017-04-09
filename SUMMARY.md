@@ -15,4 +15,5 @@
 * [Using an async run Method](using-an-async-run-method.md)
 * [Using a RichEmbed in a Command](using-a-richembed-in-a-command.md)
 * [Using Aliases in Commands](using-aliases-in-commands.md)
+* [Using Throttling in Commands](using-throttling-in-commands.md)
 
