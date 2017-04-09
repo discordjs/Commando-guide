@@ -11,4 +11,5 @@
 * [Checking for Permissions](checking-for-permissions.md)
 * [Checking for User Permissions](checking-for-user-permissions.md)
 * [Using a Validator for an Arg](using-a-validator-for-an-arg.md)
+* [Using Client Values in a Command](using-client-values-in-a-command.md)
 
