@@ -33,7 +33,6 @@ Look familiar? That's just about the same way you required Discord.js in your fi
 ```js
 const client = new commando.Client({
     commandPrefix: '<Insert Your Prefix Here>',
-    unknownCommandResponse: false,
     owner: '<Insert Your User ID Here>',
     disableEveryone: true
 });
@@ -42,8 +41,6 @@ const client = new commando.Client({
 Looks quite similar to your Discord.js Client doesn't it? Well, aside from all the options and stuff.
 
 In `commandPrefix`, you should insert the prefix you intend to have for your bot. As of writing, you can only have one, so choose wisely! However, note that a mention will **always** be allowed alongside your prefix you set here. In other words, this prefix and mentions are how you will use your bot. **No, there is no way to disable mentions being a prefix!**
-
-The next setting, `unknownCommandResponse`, is basically the bot telling you it could not find that command if the user uses the prefix + an unknown command name. We want to set this to `false` in order to comply with the [Best Bot Practices](https://github.com/meew0/discord-bot-best-practices).
 
 After that is the `owner` field, which should contain the User ID for the owner of the bot. **The user you set here has complete control over the bot, can use eval and other Owner-Only Commands, and ignores command throttling!** So, be sure to only give this to yourself.
 
