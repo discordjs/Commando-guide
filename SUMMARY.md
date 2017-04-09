@@ -10,4 +10,5 @@
 * [Using Multiple Args in One Command](using-multiple-args-in-one-command.md)
 * [Checking for Permissions](checking-for-permissions.md)
 * [Checking for User Permissions](checking-for-user-permissions.md)
+* [Using a Validator for an Arg](using-a-validator-for-an-arg.md)
 
