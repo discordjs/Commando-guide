@@ -2,7 +2,7 @@
 
 Sometimes you're going to have a command and start getting a `Forbidden` error. Why? Well, most likely you don't have permissions in the guild to do something. Commando will automatically check for the Send Messages permission and reroute the command to a DM, but for things like Embed Links or Manage Messages you may want to perform a permission check before using the command. Thankfully, this is quite simple.
 
-Let's grab our say command example from the earlier chapter, as it would fail should the command be used in without permissions. We'll start by going into it's `run` method.
+Let's grab our say command example from the earlier chapter, as it would fail should the command be used without permissions. We'll start by going into it's `run` method.
 
 ```js
 run(message, args) {
