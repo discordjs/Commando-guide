@@ -7,6 +7,8 @@ Master: `npm i -S gawdl3y/discord.js-commando`
 
 Master is usually preferred due to having more features, but stable is usually less likely to contain bugs.
 
+Also note that you are going to need Node 7 instead of Node 6. Download Node 7 [here](https://nodejs.org/en/).
+
 #### Installing Discord.js Master
 
 Now, you'll later find out that should you install discord.js Stable from npm, at the time of writing, that the help command will give you an error whenever it is used. This is due to a bug in the way messages are split on Stable. To avoid this, I recommend you go ahead and install Discord.js master as well:
