@@ -22,23 +22,9 @@ Let's modify our first command, reply, to edit the message after it has been sen
 First, mark the `run` method with the `async` keyword.
 
 ```js
-const commando = require('discord.js-commando');
-
-module.exports = class ReplyCommand extends commando.Command {
-    constructor(Client) {
-        super(Client, {
-            name: 'reply',
-            group: 'group1',
-            memberName: 'reply',
-            description: 'Replies with a Message.',
-            examples: [';reply']
-        });
-    }
-
-    async run(message) {
-        return message.say('Hi, I\'m awake!');
-    }
-};
+async run(message) {
+    return message.say('Hi, I\'m awake!');
+}
 ```
 
 Now, let's edit the message we send from 'Hi, I'm awake!' to 'I want to go to bed.'.
