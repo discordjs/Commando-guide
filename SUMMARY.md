@@ -10,10 +10,10 @@
 * [Using Aliases in Commands](using-aliases-in-commands.md)
 * [Using Throttling in Commands](using-throttling-in-commands.md)
 * [Using Client Values in a Command](using-client-values-in-a-command.md)
+* [Using a RichEmbed in a Command](using-a-richembed-in-a-command.md)
 * [Setting a Command to Guild Only](setting-a-command-to-guild-only.md)
-* [Using Multiple Args in One Command](using-multiple-args-in-one-command.md)
 * [Checking for Permissions](checking-for-permissions.md)
-* [Using a Validator for an Arg](using-a-validator-for-an-arg.md)
+* [Checking for User Permissions](checking-for-user-permissions.md)
 * [Using an async run Method](using-an-async-run-method.md)
-* [Using Throttling in Commands](using-throttling-in-commands.md)
+* [Removing the Unknown Command Response](removing-the-unknown-command-response.md)
 
