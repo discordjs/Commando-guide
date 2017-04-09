@@ -9,4 +9,5 @@
 * [Removing the Unknown Command Response](removing-the-unknown-command-response.md)
 * [Using Multiple Args in One Command](using-multiple-args-in-one-command.md)
 * [Checking for Permissions](checking-for-permissions.md)
+* [Checking for User Permissions](checking-for-user-permissions.md)
 
