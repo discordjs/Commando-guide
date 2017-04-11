@@ -17,7 +17,7 @@ This will return `false` if the user is not the owner of the bot and `true` if t
 The `hasPermission` method should be placed separate from the `run` method, like so \(if you wanted your say command to only be usable by the owner\):
 
 ```js
-const { Command } = require('discord.js-commando')
+const { Command } = require('discord.js-commando');
 
 module.exports = class SayCommand extends Command {
     constructor(client) {

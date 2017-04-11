@@ -9,7 +9,7 @@ Once you have your file, let's get started!
 Before you do anything, at the start of your file, you're going to need to require commando again.
 
 ```js
-const { Command } = require('discord.js-commando')
+const { Command } = require('discord.js-commando');
 ```
 
 This will allow our command to... Well, exist.
@@ -59,7 +59,7 @@ You may have also noticed that I used `message.say` instead of `message.channel.
 So when all that is done, your file should look like this:
 
 ```js
-const { Command } = require('discord.js-commando')
+const { Command } = require('discord.js-commando');
 
 module.exports = class ReplyCommand extends Command {
     constructor(client) {

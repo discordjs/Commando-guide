@@ -7,7 +7,7 @@ Let's create a simple command to send a DM to the user mentioned, and the conten
 First, you know the drill, let's create our command class and run method.
 
 ```js
-const { Command } = require('discord.js-commando')
+const { Command } = require('discord.js-commando');
 
 module.exports = class SayCommand extends Command {
     constructor(client) {
@@ -55,7 +55,7 @@ run(message, args) {
 See how easy it is? Now, the command has multiple args.
 
 ```js
-const { Command } = require('discord.js-commando')
+const { Command } = require('discord.js-commando');
 
 module.exports = class SayCommand extends Command {
     constructor(client) {
