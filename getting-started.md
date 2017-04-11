@@ -74,7 +74,7 @@ Should you want to disable a default command, say, the prefix command, you can p
 Next, we're going to create a ready event, which is about the same as the one in your first Discord.js Bot.
 
 ```js
-client.once('ready', () => {
+client.on('ready', () => {
     console.log('Logged in!');
     client.user.setGame('Game');
 });
@@ -129,7 +129,7 @@ client.registry
     .registerDefaultCommands()
     .registerCommandsIn(path.join(__dirname, 'commands'));
 
-client.once('ready', () => {
+client.on('ready', () => {
     console.log('Logged in!');
     client.user.setGame('Game');
 });
