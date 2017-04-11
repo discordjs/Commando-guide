@@ -14,8 +14,8 @@ const commando = require('discord.js-commando');
 const Discord = require('discord.js');
 
 module.exports = class EmbedCommand extends commando.Command {
-    constructor(Client) {
-        super(Client, {
+    constructor(client) {
+        super(client, {
             name: 'embed',
             group: 'group2',
             memberName: 'embed',

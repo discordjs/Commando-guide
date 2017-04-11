@@ -10,8 +10,8 @@ First, go into your `group2` folder and make a new file called `say.js`. You kno
 const commando = require('discord.js-commando');
 
 module.exports = class SayCommand extends commando.Command {
-    constructor(Client) {
-        super(Client, {
+    constructor(client) {
+        super(client, {
             name: 'say',
             group: 'group2',
             memberName: 'say',
@@ -21,7 +21,7 @@ module.exports = class SayCommand extends commando.Command {
     }
 
     run(message) {
-        
+
     }
 };
 ```
@@ -31,7 +31,7 @@ Place a `,` after the `examples` field, we're going to be adding an `args` field
 The `args` field is simply an array of objects, each containing data for that argument.
 
 ```js
-super(Client, {
+super(client, {
     name: 'say',
     group: 'group2',
     memberName: 'say',
@@ -47,7 +47,7 @@ super(Client, {
 
 See? Simple.
 
-`key` is the name of the argument, when you define it in your `run` method, this is what we'll be using.   
+`key` is the name of the argument, when you define it in your `run` method, this is what we'll be using.  
 `prompt` is the text that displays if no argument is provided. For example: someone just uses `<prefix>say`. That prompt will come up asking for the text.  
 `type` is the type the argument is a part of. This can be many things, including `string`, `integer`, `user`, `member`, you get the idea. We'll go over more of these later.
 
@@ -84,8 +84,8 @@ And there we have it, a say command using args! Let's spruce it up a little with
 const commando = require('discord.js-commando');
 
 module.exports = class SayCommand extends commando.Command {
-    constructor(Client) {
-        super(Client, {
+    constructor(client) {
+        super(client, {
             name: 'say',
             group: 'group2',
             memberName: 'say',

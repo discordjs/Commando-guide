@@ -10,8 +10,8 @@ First, you know the drill, let's create our command class and run method.
 const commando = require('discord.js-commando');
 
 module.exports = class DMCommand extends commando.Command {
-    constructor(Client) {
-        super(Client, {
+    constructor(client) {
+        super(client, {
             name: 'dm',
             group: 'group2',
             memberName: 'dm',
@@ -22,7 +22,7 @@ module.exports = class DMCommand extends commando.Command {
     }
 
     run(message, args) {
-        
+
     }
 };
 ```
@@ -52,14 +52,14 @@ run(message, args) {
 }
 ```
 
-See how easy it is? Now, the command has multiple args. 
+See how easy it is? Now, the command has multiple args.
 
 ```js
 const commando = require('discord.js-commando');
 
 module.exports = class DMCommand extends commando.Command {
-    constructor(Client) {
-        super(Client, {
+    constructor(client) {
+        super(client, {
             name: 'dm',
             group: 'group2',
             memberName: 'dm',

@@ -5,7 +5,7 @@ You may have noticed that should you use your say command in a DM, you are going
 First, let's go into your say command's file and find our command data.
 
 ```js
-super(Client, {
+super(client, {
     name: 'say',
     group: 'group2',
     memberName: 'say',
@@ -19,10 +19,10 @@ super(Client, {
 });
 ```
 
-After `examples` \(though it can be anywhere in this section\) let's add a `guildOnly` setting and set it to `true`. 
+After `examples` \(though it can be anywhere in this section\) let's add a `guildOnly` setting and set it to `true`.
 
 ```js
-super(Client, {
+super(client, {
     name: 'say',
     group: 'group2',
     memberName: 'say',

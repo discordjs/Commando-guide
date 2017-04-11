@@ -5,7 +5,7 @@ Aliases are simply different ways to call the same command. They're extremely si
 Let's, once again, grab our say command. Head over to all of the command properties.
 
 ```js
-super(Client, {
+super(client, {
     name: 'say',
     group: 'group2',
     memberName: 'say',
@@ -23,7 +23,7 @@ super(Client, {
 Underneath the `name` property, let's place the aliases. We'll set them to copycat, repeat, echo, and parrot.
 
 ```js
-super(Client, {
+super(client, {
     name: 'say',
     aliases: [
         'copycat',

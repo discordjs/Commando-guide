@@ -44,8 +44,8 @@ In the end, our Reply command looks like this:
 const commando = require('discord.js-commando');
 
 module.exports = class ReplyCommand extends commando.Command {
-    constructor(Client) {
-        super(Client, {
+    constructor(client) {
+        super(client, {
             name: 'reply',
             group: 'group1',
             memberName: 'reply',

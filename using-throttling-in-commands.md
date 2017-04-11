@@ -5,7 +5,7 @@ Throttling is like rate-limiting, it only allows the command to be used in a cer
 Let's \(for the millionth time\) grab our say command's properties.
 
 ```js
-super(Client, {
+super(client, {
     name: 'say',
     aliases: [
         'copycat',
@@ -34,7 +34,7 @@ Now, let's add `throttling` to the command. `throttling` is an object, which con
 Let's make it have 2 usages allowed in a 10 second period.
 
 ```js
-super(Client, {
+super(client, {
     name: 'say',
     aliases: [
         'copycat',

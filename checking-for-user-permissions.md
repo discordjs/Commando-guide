@@ -20,8 +20,8 @@ The `hasPermission` method should be placed separate from the `run` method, like
 const commando = require('discord.js-commando');
 
 module.exports = class SayCommand extends commando.Command {
-    constructor(Client) {
-        super(Client, {
+    constructor(client) {
+        super(client, {
             name: 'say',
             group: 'group2',
             memberName: 'say',
@@ -35,7 +35,7 @@ module.exports = class SayCommand extends commando.Command {
             }]
         });    
     }
-    
+
     hasPermission(msg) {
         return this.client.isOwner(msg.author);
     }
