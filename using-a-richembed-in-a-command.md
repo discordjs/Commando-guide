@@ -4,14 +4,14 @@ You may have noticed that if you try to use a RichEmbed in your command, that th
 
 ```js
 const { Command } = require('discord.js-commando');
-const Discord = require('discord.js');
+const { RichEmbed } = require('discord.js');
 ```
 
 Now that it has been required, our RichEmbed won't be undefined. Let's create a new command that embeds the content of the user's message.
 
 ```js
 const { Command } = require('discord.js-commando');
-const Discord = require('discord.js');
+const { RichEmbed } = require('discord.js');
 
 module.exports = class EmbedCommand extends Command {
     constructor(client) {
@@ -31,7 +31,7 @@ module.exports = class EmbedCommand extends Command {
 
     run(message, args) {
         const text = args.text;
-        const embed = new Discord.RichEmbed()
+        const embed = new RichEmbed()
             .setDescription(text)
             .setAuthor(message.author.username, message.author.displayAvatarURL)
             .setColor(0x00AE86)
