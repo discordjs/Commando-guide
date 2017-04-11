@@ -41,9 +41,9 @@ You can `await` anything that returns a Promise. In other words, anything you ca
 In the end, our Reply command looks like this:
 
 ```js
-const commando = require('discord.js-commando');
+const { Command } = require('discord.js-commando')
 
-module.exports = class ReplyCommand extends commando.Command {
+module.exports = class ReplyCommand extends Command {
     constructor(client) {
         super(client, {
             name: 'reply',

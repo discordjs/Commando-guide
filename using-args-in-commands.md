@@ -7,9 +7,9 @@ A `string` argument is simply the text after the command name and prefix. For ex
 First, go into your `group2` folder and make a new file called `say.js`. You know the drill. Once you have it, set up your command class and everything just like the one in our reply command.
 
 ```js
-const commando = require('discord.js-commando');
+const { Command } = require('discord.js-commando')
 
-module.exports = class SayCommand extends commando.Command {
+module.exports = class SayCommand extends Command {
     constructor(client) {
         super(client, {
             name: 'say',
@@ -81,9 +81,9 @@ run(message, args) {
 And there we have it, a say command using args! Let's spruce it up a little with a Zero-Width Space.
 
 ```js
-const commando = require('discord.js-commando');
+const { Command } = require('discord.js-commando')
 
-module.exports = class SayCommand extends commando.Command {
+module.exports = class SayCommand extends Command {
     constructor(client) {
         super(client, {
             name: 'say',

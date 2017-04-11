@@ -3,17 +3,17 @@
 You may have noticed that if you try to use a RichEmbed in your command, that there's no way to create the new embed, as `new Discord.RichEmbed()` is going to say `Discord` is undefined. That's because when using a RichEmbed, we need to require Discord.js alongside Commando.
 
 ```js
-const commando = require('discord.js-commando');
+const { Command } = require('discord.js-commando')
 const Discord = require('discord.js');
 ```
 
 Now that it has been required, our RichEmbed won't be undefined. Let's create a new command that embeds the content of the user's message.
 
 ```js
-const commando = require('discord.js-commando');
+const { Command } = require('discord.js-commando')
 const Discord = require('discord.js');
 
-module.exports = class EmbedCommand extends commando.Command {
+module.exports = class EmbedCommand extends Command {
     constructor(client) {
         super(client, {
             name: 'embed',
