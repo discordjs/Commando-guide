@@ -18,8 +18,8 @@ Now, commands are classes exported with `module.exports`. So let's create the cl
 
 ```js
 module.exports = class ReplyCommand extends commando.Command {
-    constructor(Client) {
-        super(Client, {
+    constructor(client) {
+        super(client, {
             name: 'reply',
             group: 'group1',
             memberName: 'reply',
@@ -62,8 +62,8 @@ So when all that is done, your file should look like this:
 const commando = require('discord.js-commando');
 
 module.exports = class ReplyCommand extends commando.Command {
-    constructor(Client) {
-        super(Client, {
+    constructor(client) {
+        super(client, {
             name: 'reply',
             group: 'group1',
             memberName: 'reply',
