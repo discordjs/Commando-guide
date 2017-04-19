@@ -30,7 +30,7 @@ module.exports = class EmbedCommand extends Command {
     }
 
     run(message, args) {
-        const text = args.text;
+        const { text } = args;
         const embed = new RichEmbed()
             .setDescription(text)
             .setAuthor(message.author.username, message.author.displayAvatarURL)

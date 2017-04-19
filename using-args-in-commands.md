@@ -55,7 +55,7 @@ Now, head on over to your `run` method and, firstly, define args and set our `te
 
 ```js
 run(message, args) {
-    const text = args.text;
+    const { text } = args;
 }
 ```
 
@@ -63,7 +63,7 @@ Next, let's make the `run` method return the message.
 
 ```js
 run(message, args) {
-    const text = args.text;
+    const { text } = args;
     return message.say(text);
 }
 ```
@@ -72,7 +72,7 @@ Let's also make it delete our original message before saying it.
 
 ```js
 run(message, args) {
-    const text = args.text;
+    const { text } = args;
     message.delete();
     return message.say(text);
 }
@@ -100,7 +100,7 @@ module.exports = class SayCommand extends Command {
     }
 
     run(message, args) {
-        const text = args.text;
+        const { text } = args;
         message.delete();
         return message.say(`\u180E${text}`);
     }

@@ -46,8 +46,7 @@ Simple, isn't it? Now, let's make the run method.
 
 ```js
 run(message, args) {
-    const user = args.user;
-    const content = args.content;
+    const { user, content } = args;
     return user.send(content);
 }
 ```
@@ -79,8 +78,7 @@ module.exports = class SayCommand extends Command {
     }
 
     run(message, args) {
-        const user = args.user;
-        const content = args.content;
+        const { user, content } = args;
         return user.send(content);
     }
 };

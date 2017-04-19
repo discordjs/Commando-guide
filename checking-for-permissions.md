@@ -6,7 +6,7 @@ Let's grab our say command example from the earlier chapter, as it would fail sh
 
 ```js
 run(message, args) {
-    const text = args.text;
+    const { text } = args;
     message.delete();
     return message.say(`\u180E${text}`);
 }
@@ -29,7 +29,7 @@ run(message, args) {
     if (message.channel.type !== 'dm') {
         if (!message.channel.permissionsFor(this.client.user).hasPermission('MANAGE_MESSAGES')) return message.say('Error! I don\'t have permission to Manage Messages!');
     }
-    const text = args.text;
+    const { text } = args;
     message.delete();
     return message.say(`\u180E${text}`);
 }
