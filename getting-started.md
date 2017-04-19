@@ -42,7 +42,12 @@ Looks quite similar to your Discord.js Client doesn't it? Well, aside from all t
 
 In `commandPrefix`, you should insert the prefix you intend to have for your bot. As of writing, you can only have one, so choose wisely! However, note that a mention will **always** be allowed alongside your prefix you set here. In other words, this prefix and mentions are how you will use your bot. **No, there is no way to disable mentions being a prefix!**
 
-After that is the `owner` field, which should contain the User ID for the owner of the bot. **The user you set here has complete control over the bot, can use eval and other Owner-Only Commands, and ignores command throttling!** So, be sure to only give this to yourself.
+After that is the `owner` field, which should contain the User ID for the owner of the bot. **The user you set here has complete control over the bot, can use eval and other Owner-Only Commands, and ignores command throttling!** So, be sure to only give this to yourself.  
+Also, if you installed master earlier, this can also be an array of IDs instead of a single one. 
+
+```js
+owners: ['ID', 'ID']
+```
 
 The final option, `disableEveryone`, simply prevents the bot from mentioning `@everyone`. This is simply to prevent things from getting annoying. After all, do you want someone mentioning everyone with the bot? Didn't think so.
 
