@@ -68,7 +68,7 @@ Remember how I said we'd need path? There you go.
 
 Doing this we've also created our first command group, in the folder `group1` in our `commands` folder. It will be displayed in the help command as 'Our First Command Group'. You can name both of these whatever you like.
 
-Should you want to disable a default command, say, the prefix command, you can pass that in `registerDefaultCommands`.
+Should you want to disable a default command, say, the help command, you can pass that in `registerDefaultCommands`.
 
 ```js
 .registerDefaultCommands({
