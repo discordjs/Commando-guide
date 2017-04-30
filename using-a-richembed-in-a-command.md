@@ -29,14 +29,14 @@ module.exports = class EmbedCommand extends Command {
         });    
     }
 
-    run(message, args) {
+    run(msg, args) {
         const { text } = args;
         const embed = new RichEmbed()
             .setDescription(text)
             .setAuthor(message.author.username, message.author.displayAvatarURL)
             .setColor(0x00AE86)
             .setTimestamp();
-        return message.embed(embed);
+        return msg.embed(embed);
     }
 };
 ```

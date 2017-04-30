@@ -40,13 +40,13 @@ module.exports = class SayCommand extends Command {
         return this.client.isOwner(msg.author);
     }
 
-    run(message, args) {
-        if (message.channel.type !== 'dm') {
-            if (!message.channel.permissionsFor(this.client.user).hasPermission('MANAGE_MESSAGES')) return message.say('Error! I don\'t have permission to Manage Messages!');
-        }
+    run(msg, args) {
+        if (msg.channel.type !== 'dm')
+            if (!msg.channel.permissionsFor(this.client.user).has('MANAGE_MESSAGES')) 
+                return msg.say('Error! I don\'t have permission to Manage Messages!');
         const { text } = args;
-        message.delete();
-        return message.say(`\u180E${text}`);
+        msg.delete();
+        return msg.say(`\u180E${text}`);
     }
 };
 ```

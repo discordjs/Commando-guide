@@ -44,8 +44,8 @@ There are many more properties, but more on those later on. For now, these are t
 The next thing we're going to need is a `run` method. This should go right below the constructor for the command. Inside, let's return a message:
 
 ```js
-    run(message) {
-        return message.say('Hi, I\'m awake!');
+    run(msg) {
+        return msg.say('Hi, I\'m awake!');
     }
 };
 ```
@@ -72,8 +72,8 @@ module.exports = class ReplyCommand extends Command {
         });
     }
 
-    run(message) {
-        return message.say('Hi, I\'m awake!');
+    run(msg) {
+        return msg.say('Hi, I\'m awake!');
     }
 };
 ```

@@ -20,7 +20,7 @@ module.exports = class SayCommand extends Command {
         });
     }
 
-    run(message) {
+    run(msg) {
 
     }
 };
@@ -54,7 +54,7 @@ See? Simple.
 Now, head on over to your `run` method and, firstly, define args and set our `text` arg to a variable.
 
 ```js
-run(message, args) {
+run(msg, args) {
     const { text } = args;
 }
 ```
@@ -62,19 +62,19 @@ run(message, args) {
 Next, let's make the `run` method return the message.
 
 ```js
-run(message, args) {
+run(msg, args) {
     const { text } = args;
-    return message.say(text);
+    return msg.say(text);
 }
 ```
 
 Let's also make it delete our original message before saying it.
 
 ```js
-run(message, args) {
+run(msg, args) {
     const { text } = args;
-    message.delete();
-    return message.say(text);
+    msg.delete();
+    return msg.say(text);
 }
 ```
 
@@ -101,8 +101,8 @@ module.exports = class SayCommand extends Command {
 
     run(message, args) {
         const { text } = args;
-        message.delete();
-        return message.say(`\u180E${text}`);
+        msg.delete();
+        return msg.say(`\u180E${text}`);
     }
 };
 ```

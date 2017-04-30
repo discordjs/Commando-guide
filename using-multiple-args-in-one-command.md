@@ -21,7 +21,7 @@ module.exports = class SayCommand extends Command {
         });    
     }
 
-    run(message, args) {
+    run(msg, args) {
 
     }
 };
@@ -45,7 +45,7 @@ args: [{
 Simple, isn't it? Now, let's make the run method.
 
 ```js
-run(message, args) {
+run(msg, args) {
     const { user, content } = args;
     return user.send(content);
 }
@@ -77,7 +77,7 @@ module.exports = class SayCommand extends Command {
         });    
     }
 
-    run(message, args) {
+    run(msg, args) {
         const { user, content } = args;
         return user.send(content);
     }

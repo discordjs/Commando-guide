@@ -3,16 +3,16 @@
 `async` is a simple way to make your Promise-Powered code look _extremely_ neat. Normally with promises, we would use `.then` to continue running the command after the promise has resolved.
 
 ```js
-message.say('Hi').then(msg => {
-    msg.edit('Hello');
+msg.say('Hi').then(message => {
+    message.edit('Hello');
 });
 ```
 
 However, `async` can make this much easier to do.
 
 ```js
-const msg = await message.say('Hi');
-msg.edit('Hello');
+const message = await msg.say('Hi');
+message.edit('Hello');
 ```
 
 Now we've completely dropped the indentation, and our code looks cleaner because of it.
@@ -22,17 +22,17 @@ Let's modify our first command, reply, to edit the message after it has been sen
 First, mark the `run` method with the `async` keyword.
 
 ```js
-async run(message) {
-    return message.say('Hi, I\'m awake!');
+async run(msg) {
+    return msg.say('Hi, I\'m awake!');
 }
 ```
 
 Now, let's edit the message we send from 'Hi, I'm awake!' to 'I want to go to bed.'.
 
 ```js
-async run(message) {
-    const msg = await message.say('Hi, I\'m awake!');
-    return msg.edit('I want to go to bed.');
+async run(msg) {
+    const message = await msg.say('Hi, I\'m awake!');
+    return message.edit('I want to go to bed.');
 }
 ```
 
@@ -54,9 +54,9 @@ module.exports = class ReplyCommand extends Command {
         });
     }
 
-    async run(message) {
-        const msg = await message.say('Hi, I\'m awake!');
-        return msg.edit('I want to go to bed.');
+    async run(msg) {
+        const message = await msg.say('Hi, I\'m awake!');
+        return message.edit('I want to go to bed.');
     }
 };
 ```

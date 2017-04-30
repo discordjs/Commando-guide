@@ -12,7 +12,7 @@
 * [Using Client Values in a Command](using-client-values-in-a-command.md)
 * [Using a RichEmbed in a Command](using-a-richembed-in-a-command.md)
 * [Setting a Command to Guild Only](setting-a-command-to-guild-only.md)
-* [Checking for Permissions](checking-for-permissions.md)
+* [Checking for Client Permissions](checking-for-permissions.md)
 * [Checking for User Permissions](checking-for-user-permissions.md)
 * [Using an async run Method](using-an-async-run-method.md)
 * [Removing the Unknown Command Response](removing-the-unknown-command-response.md)
