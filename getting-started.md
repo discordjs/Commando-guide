@@ -9,12 +9,6 @@ Master is usually preferred due to having more features, but stable is usually l
 
 Also note that you are going to need Node 7 instead of Node 6. Download Node 7 [here](https://nodejs.org/en/).
 
-#### Installing Discord.js Master
-
-Now, you'll later find out that should you install discord.js Stable from npm, at the time of writing, that the help command will give you an error whenever it is used. This is due to a bug in the way messages are split on Stable. To avoid this, I recommend you go ahead and install Discord.js master as well:
-
-`npm i -S hydrabolt/discord.js`
-
 #### Creating Your index.js File
 
 While it doesn't have to be called `index.js`, the index file is your main file for your bot, which handles everything from registering new commands to logging in your client. It's quite similar to standard Discord.js in many ways, but there are a few extra steps that need to be done to get your bot up and running.
@@ -46,7 +40,7 @@ After that is the `owner` field, which should contain the User ID for the owner 
 Also, if you installed master earlier, this can also be an array of IDs instead of a single one.
 
 ```js
-owners: ['ID', 'ID']
+owner: ['ID', 'ID']
 ```
 
 The final option, `disableEveryone`, simply prevents the bot from mentioning `@everyone`. This is simply to prevent things from getting annoying. After all, do you want someone mentioning everyone with the bot? Didn't think so.
