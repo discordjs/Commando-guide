@@ -24,7 +24,7 @@ module.exports = class ReplyCommand extends Command {
             group: 'group1',
             memberName: 'reply',
             description: 'Replies with a Message.',
-            examples: [';reply']
+            examples: ['reply']
         });
     }
 ```
@@ -68,7 +68,7 @@ module.exports = class ReplyCommand extends Command {
             group: 'group1',
             memberName: 'reply',
             description: 'Replies with a Message.',
-            examples: [';reply']
+            examples: ['reply']
         });
     }
 

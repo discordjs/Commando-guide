@@ -7,30 +7,33 @@ Let's say you have a command where your first argument has to match a certain te
 First, let's pull our argument from our say command:
 
 ```js
-args: [{
-    key: 'text',
-    prompt: 'What text would you like the bot to say?',
-    type: 'string'
-}]
+args: [
+    {
+        key: 'text',
+        prompt: 'What text would you like the bot to say?',
+        type: 'string'
+    }
+]
 ```
 
 Let's add a blank `validate` to the arg.
 
 ```js
-args: [{
-    key: 'text',
-    prompt: 'What text would you like the bot to say?',
-    type: 'string',
-    validate: text => {}
-}]
+args: [
+    {
+        key: 'text',
+        prompt: 'What text would you like the bot to say?',
+        type: 'string',
+        validate: text => {}
+    }
+]
 ```
 
 Inside our validate, let's check to see if the length is below 201 characters, and return `true` if it does.
 
 ```js
 validate: text => {
-    if (text.length < 201)
-        return true;
+    if (text.length < 201) return true;
 }
 ```
 
@@ -38,8 +41,7 @@ Now, below that, let's let it return an error message if that check does not pas
 
 ```js
 validate: text => {
-    if (text.length < 201)
-        return true;
+    if (text.length < 201) return true;
     return 'Message Content is above 200 characters';
 }
 ```
@@ -47,16 +49,17 @@ validate: text => {
 In the end, your args should look like this:
 
 ```js
-args: [{
-    key: 'text',
-    prompt: 'What text would you like the bot to say?',
-    type: 'string',
-    validate: text => {
-        if (text.length < 201)
-            return true;
-        return 'Message Content is above 200 characters';
-    }    
-}]
+args: [
+    {
+        key: 'text',
+        prompt: 'What text would you like the bot to say?',
+        type: 'string',
+        validate: text => {
+            if (text.length < 201) return true;
+            return 'Message Content is above 200 characters';
+        }    
+    }
+]
 ```
 
 And now you've got a validator.

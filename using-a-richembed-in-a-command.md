@@ -20,12 +20,14 @@ module.exports = class EmbedCommand extends Command {
             group: 'group2',
             memberName: 'embed',
             description: 'Embeds the text you provide.',
-            examples: [';embed Embeds are cool.'],
-            args: [{
-                key: 'text',
-                prompt: 'What text would you like the bot to embed?',
-                type: 'string'
-            }]
+            examples: ['embed Embeds are cool.'],
+            args: [
+                {
+                    key: 'text',
+                    prompt: 'What text would you like the bot to embed?',
+                    type: 'string'
+                }
+            ]
         });    
     }
 

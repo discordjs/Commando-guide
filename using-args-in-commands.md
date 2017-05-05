@@ -16,7 +16,7 @@ module.exports = class SayCommand extends Command {
             group: 'group2',
             memberName: 'say',
             description: 'Replies with the text you provide.',
-            examples: [';say Hi there!']
+            examples: ['say Hi there!']
         });
     }
 
@@ -36,12 +36,14 @@ super(client, {
     group: 'group2',
     memberName: 'say',
     description: 'Replies with the text you provide.',
-    examples: [';say Hi there!'],
-    args: [{
-        key: 'text',
-        prompt: 'What text would you like the bot to say?',
-        type: 'string'
-    }]
+    examples: ['say Hi there!'],
+    args: [
+        {
+            key: 'text',
+            prompt: 'What text would you like the bot to say?',
+            type: 'string'
+        }
+    ]
 });
 ```
 
@@ -90,12 +92,14 @@ module.exports = class SayCommand extends Command {
             group: 'group2',
             memberName: 'say',
             description: 'Replies with the text you provide.',
-            examples: [';say Hi there!'],
-            args: [{
-                key: 'text',
-                prompt: 'What text would you like the bot to say?',
-                type: 'string'
-            }]
+            examples: ['say Hi there!'],
+            args: [
+                {
+                    key: 'text',
+                    prompt: 'What text would you like the bot to say?',
+                    type: 'string'
+                }
+            ]
         });    
     }
 

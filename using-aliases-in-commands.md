@@ -10,13 +10,15 @@ super(client, {
     group: 'group2',
     memberName: 'say',
     description: 'Replies with the text you provide.',
-    examples: [';say Hi there!'],
+    examples: ['say Hi there!'],
     guildOnly: true,
-    args: [{
-        key: 'text',
-        prompt: 'What text would you like the bot to say?',
-        type: 'string'
-    }]
+    args: [
+        {
+            key: 'text',
+            prompt: 'What text would you like the bot to say?',
+            type: 'string'
+        }
+    ]
 });
 ```
 
@@ -34,13 +36,15 @@ super(client, {
     group: 'group2',
     memberName: 'say',
     description: 'Replies with the text you provide.',
-    examples: [';say Hi there!'],
+    examples: ['say Hi there!'],
     guildOnly: true,
-    args: [{
-        key: 'text',
-        prompt: 'What text would you like the bot to say?',
-        type: 'string'
-    }]
+    args: [
+        {
+            key: 'text',
+            prompt: 'What text would you like the bot to say?',
+            type: 'string'
+        }
+    ]
 });
 ```
 

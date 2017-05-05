@@ -49,8 +49,7 @@ module.exports = class ReplyCommand extends Command {
             name: 'reply',
             group: 'group1',
             memberName: 'reply',
-            description: 'Replies with a Message.',
-            examples: [';reply']
+            description: 'Replies with a Message.'
         });
     }
 
