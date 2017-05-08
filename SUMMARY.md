@@ -16,4 +16,5 @@
 * [Checking for User Permissions](checking-for-user-permissions.md)
 * [Using an async run Method](using-an-async-run-method.md)
 * [Removing the Unknown Command Response](removing-the-unknown-command-response.md)
+* [Setting a Database Provider](setting-a-database-provider.md)
 
