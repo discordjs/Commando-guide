@@ -50,3 +50,5 @@ super(client, {
 
 Now, you can use `<prefix>say`, `<prefix>copycat`, `<prefix>echo`, etc. and all of them will call our say command.
 
+Also, note that aliases and command names are automatically case insensitive. `say` `SaY` and `sAy` are all valid here. Auto-Aliases are also created for aliases and command names containing a hyphen \(-\). For example, `server-info` will automatically have `serverinfo` as an alias without needing to list it in the aliases. Cool, huh?
+
