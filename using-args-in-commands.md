@@ -103,7 +103,7 @@ module.exports = class SayCommand extends Command {
         });    
     }
 
-    run(message, args) {
+    run(msg, args) {
         const { text } = args;
         msg.delete();
         return msg.say(`\u180E${text}`);
