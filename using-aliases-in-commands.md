@@ -11,7 +11,6 @@ super(client, {
     memberName: 'say',
     description: 'Replies with the text you provide.',
     examples: ['say Hi there!'],
-    guildOnly: true,
     args: [
         {
             key: 'text',
@@ -27,17 +26,11 @@ Underneath the `name` property, let's place the aliases. We'll set them to copyc
 ```js
 super(client, {
     name: 'say',
-    aliases: [
-        'copycat',
-        'repeat',
-        'echo',
-        'parrot'
-    ],
+    aliases: ['copycat', 'repeat', 'echo', 'parrot'],
     group: 'group2',
     memberName: 'say',
     description: 'Replies with the text you provide.',
     examples: ['say Hi there!'],
-    guildOnly: true,
     args: [
         {
             key: 'text',

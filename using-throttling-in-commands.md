@@ -7,17 +7,11 @@ Let's \(for the millionth time\) grab our say command's properties.
 ```js
 super(client, {
     name: 'say',
-    aliases: [
-        'copycat',
-        'repeat',
-        'echo',
-        'parrot'
-    ],
+    aliases: ['copycat', 'repeat', 'echo', 'parrot'],
     group: 'group2',
     memberName: 'say',
     description: 'Replies with the text you provide.',
     examples: ['say Hi there!'],
-    guildOnly: true,
     args: [
         {
             key: 'text',
@@ -38,17 +32,11 @@ Let's make it have 2 usages allowed in a 10 second period.
 ```js
 super(client, {
     name: 'say',
-    aliases: [
-        'copycat',
-        'repeat',
-        'echo',
-        'parrot'
-    ],
+    aliases: ['copycat', 'repeat', 'echo', 'parrot'],
     group: 'group2',
     memberName: 'say',
     description: 'Replies with the text you provide.',
     examples: ['say Hi there!'],
-    guildOnly: true,
     throttling: {
         usages: 2,
         duration: 10

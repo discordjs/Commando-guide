@@ -7,6 +7,7 @@ First, let's go into your say command's file and find our command data.
 ```js
 super(client, {
     name: 'say',
+    aliases: ['copycat', 'repeat', 'echo', 'parrot'],
     group: 'group2',
     memberName: 'say',
     description: 'Replies with the text you provide.',
@@ -26,6 +27,7 @@ After `examples` \(though it can be anywhere in this section\) let's add a `guil
 ```js
 super(client, {
     name: 'say',
+    aliases: ['copycat', 'repeat', 'echo', 'parrot'],
     group: 'group2',
     memberName: 'say',
     description: 'Replies with the text you provide.',
