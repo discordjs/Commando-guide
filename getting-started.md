@@ -81,14 +81,6 @@ client.on('ready', () => {
 
 This will send `Logged in!` to your console when the bot is ready, and set the Bot's Game to 'Game'. Set that to whatever you wish.
 
-After that, let's add an `unhandledRejection` catcher.
-
-```js
-process.on('unhandledRejection', console.error);
-```
-
-This is just to catch any Unhandled Promise Rejections so we can get the full error stack for them.
-
 Last but certainly not least, let's log the bot in.
 
 ```js
@@ -132,8 +124,6 @@ client.on('ready', () => {
     console.log('Logged in!');
     client.user.setGame('Game');
 });
-
-process.on('unhandledRejection', console.error);
 
 client.login('Your Secret Token');
 ```
