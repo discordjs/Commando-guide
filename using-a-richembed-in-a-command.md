@@ -35,7 +35,7 @@ module.exports = class EmbedCommand extends Command {
         const { text } = args;
         const embed = new RichEmbed()
             .setDescription(text)
-            .setAuthor(message.author.username, message.author.displayAvatarURL)
+            .setAuthor(msg.author.username, msg.author.displayAvatarURL)
             .setColor(0x00AE86)
             .setTimestamp();
         return msg.embed(embed);
