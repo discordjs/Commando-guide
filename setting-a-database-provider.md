@@ -18,15 +18,17 @@ Then, require it of course.
 
 `const sqlite = require('sqlite');`
 
+You'll also need to require SQLiteProvider from Commando, where we required the CommandoClient earlier on.
+
+`const { CommandoClient, SQLiteProvider } = require('discord.js-commando');`
+
 And lastly, setup the provider.
 
 ```js
-client.setProvider(
-	sqlite.open(path.join(__dirname, 'settings.sqlite3')).then(db => new Commando.SQLiteProvider(db))
-).catch(console.error);
+sqlite.open(path.join(__dirname, "settings.sqlite3")).then((db) => {
+    client.setProvider(new SQLiteProvider(db));
+});
 ```
 
 And there, an sqlite provider.
-
- 
 
