@@ -18,14 +18,14 @@ First thing is to require Commando. Contrary to what you may think, you do **not
 For now, simply require Commando. We'll also be requiring `path` for use later on. Don't worry, you don't have to install `path`.
 
 ```js
-const commando = require('discord.js-commando');
+const { CommandoClient } = require('discord.js-commando');
 const path = require('path');
 ```
 
 Look familiar? That's just about the same way you required Discord.js in your first bot. The next step is to create a new Commando Client. There's also a few options we are going to set. Some of these are optional, but recommended.
 
 ```js
-const client = new commando.Client({
+const client = new CommandoClient({
     commandPrefix: '<Insert Your Prefix Here>',
     owner: '<Insert Your User ID Here>',
     disableEveryone: true
@@ -101,10 +101,10 @@ package.json
 And your `index.js` file should look something like this:
 
 ```js
-const commando = require('discord.js-commando');
+const { CommandoClient } = require('discord.js-commando');
 const path = require('path');
 
-const client = new commando.Client({
+const client = new CommandoClient({
     commandPrefix: '<Insert Your Prefix Here>',
     unknownCommandResponse: false,
     owner: '<Insert Your User ID Here>',
