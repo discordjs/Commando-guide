@@ -9,6 +9,7 @@
 * [Using a Validator for an Arg](using-a-validator-for-an-arg.md)
 * [Using Aliases in Commands](using-aliases-in-commands.md)
 * [Using Throttling in Commands](using-throttling-in-commands.md)
+* [Setting a Default Value for an Arg](setting-a-default-value-for-an-arg.md)
 * [Using Client Values in a Command](using-client-values-in-a-command.md)
 * [Using a RichEmbed in a Command](using-a-richembed-in-a-command.md)
 * [Setting a Command to Guild Only](setting-a-command-to-guild-only.md)
