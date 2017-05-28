@@ -1,4 +1,4 @@
-# Using Multiple Args in One Command
+# Multiple Args
 
 Sometimes you may want to collect more than one piece of content from a message. Well, you're in luck, as Commando makes using multiple Arguments very simple.
 

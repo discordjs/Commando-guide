@@ -1,4 +1,4 @@
-# Using an async run Method
+# async run Method
 
 `async` is a simple way to make your Promise-Powered code look _extremely_ neat. Normally with promises, we would use `.then` to continue running the command after the promise has resolved.
 

@@ -1,4 +1,4 @@
-# Using Args in Commands
+# Args
 
 Sometimes when using commands we may want to get data from our user to narrow down the command further. In this section we'll create a command that pulls a string from the message and says it back to the user.
 

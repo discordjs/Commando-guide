@@ -1,6 +1,6 @@
-# Setting a Default Value for an Arg
+# Default
 
-Sometimes you may want an argument to be optional. In that case, you can use `default`. 
+Sometimes you may want an argument to be optional. In that case, you can use `default`.
 
 Let's say you have a command that rolls a dice, it's args would probably looking something like this:
 
@@ -27,7 +27,7 @@ args: [
 ]
 ```
 
-And then it will be 6 if no argument is set. 
+And then it will be 6 if no argument is set.
 
 You can take advantage of this to create completely optional arguments, for example:
 

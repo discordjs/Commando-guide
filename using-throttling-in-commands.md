@@ -1,4 +1,4 @@
-# Using Throttling in Commands
+# Throttling
 
 Throttling is like rate-limiting, it only allows the command to be used in a certain period of time. A cooldown of sorts. They're very simple, as with most things I've explained in Commando.
 

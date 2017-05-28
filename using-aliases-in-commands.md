@@ -1,4 +1,4 @@
-# Using Aliases in Commands
+# Aliases
 
 Aliases are simply different ways to call the same command. They're extremely simple to do.
 

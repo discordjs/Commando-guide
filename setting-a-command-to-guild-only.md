@@ -1,4 +1,4 @@
-# Setting a Command to Guild Only
+# Guild Only
 
 You may have noticed that should you use your say command in a DM, you are going to get a `Forbidden` error due to attempting to delete a message from the other user in DM. One easy way around this? Setting the command to guild only!
 

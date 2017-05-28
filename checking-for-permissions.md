@@ -1,4 +1,4 @@
-# Checking for Client Permissions
+# Client Permissions
 
 Sometimes you're going to have a command and start getting a `Forbidden` error. Why? Well, most likely you don't have permissions in the guild to do something. Commando will automatically check for the Send Messages permission and reroute the command to a DM, but for things like Embed Links or Manage Messages you may want to perform a permission check before using the command. Thankfully, this is quite simple.
 

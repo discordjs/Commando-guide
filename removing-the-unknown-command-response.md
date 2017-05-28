@@ -1,4 +1,4 @@
-# Removing the Unknown Command Response
+# Unknown Command Response Removal
 
 Sometimes, you may want to remove the \(somewhat annoying\) unknown command response from your bot. Be it Cleverbot or other reason, sometimes you just want it gone, and it's quite simple to remove.
 

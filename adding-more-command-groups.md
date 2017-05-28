@@ -1,4 +1,4 @@
-# Adding More Command Groups
+# Adding Groups
 
 Before we make our new argument-powered command, I think we should place it within it's own command group. Then, we can have multiple commands sorted separately in our help command and folder structure.
 
@@ -29,9 +29,9 @@ client.registry
     .registerCommandsIn(path.join(__dirname, 'commands'));
 ```
 
-You can add as many of these as you want. 
+You can add as many of these as you want.
 
 The next step is to create another folder in your `commands` folder, called `group2`, just like with our `group1` folder.
 
-And there you go, another command group for our new command! 
+And there you go, another command group for our new command!
 

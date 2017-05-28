@@ -1,4 +1,4 @@
-# Setting a Database Provider
+# Settings Provider
 
 Commando has a built-in way of storing guild settings. By default things such as the guild's custom prefix or disabled commands will be stored for Data Persistence, and you can also have your own custom settings as well.
 

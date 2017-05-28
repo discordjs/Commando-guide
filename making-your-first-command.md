@@ -1,4 +1,4 @@
-# Making Your First Command
+# First Command
 
 So now that we've set up a command group and registered our command folder, we're ready to make our first command file! First, you're going to need to, of course, create a new file for the command. Hop over to your `commands` folder, and then your `group1` folder, and make a new file called `reply.js`. This is going to be a simple command that only replies with a message when used. We'll go into arguments and all that later.
 

@@ -1,4 +1,4 @@
-# Using a Validator for an Arg
+# Validators
 
 Sometimes you're going to want an argument to be a certain thing, for example, a certain text, or maybe you want to check the length, there's many things you may want to do. This can be accomplished with a `validate` in your arg.
 
