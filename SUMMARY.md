@@ -4,15 +4,8 @@
 
 * [Introduction](README.md)
 * [Getting Started](getting-started.md)
-
-## Commands & Groups
-
 * [First Command](making-your-first-command.md)
 * [Adding Groups](adding-more-command-groups.md)
-* [Guild Only](setting-a-command-to-guild-only.md)
-* [async run Method](using-an-async-run-method.md)
-* [Client Permissions](checking-for-permissions.md)
-* [User Permissions](checking-for-user-permissions.md)
 
 ## Args
 
@@ -22,6 +15,13 @@
 * [Aliases](using-aliases-in-commands.md)
 * [Throttling](using-throttling-in-commands.md)
 * [Default](setting-a-default-value-for-an-arg.md)
+
+## Commands
+
+* [Guild Only](setting-a-command-to-guild-only.md)
+* [async run Method](using-an-async-run-method.md)
+* [Client Permissions](checking-for-permissions.md)
+* [User Permissions](checking-for-user-permissions.md)
 
 ## Settings
 
