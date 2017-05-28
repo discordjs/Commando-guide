@@ -69,7 +69,7 @@ _Anything_ that returns `true` or `false` can be used.
 Also, as of the newest update, we can also return a string for a custom response.
 
 ```js
-hasPermissions(msg) {
+hasPermission(msg) {
     if (!msg.member.hasPermissions('BAN_MEMBERS') return 'You do not have the `Ban Members` Permission';
     else return true;
 }
