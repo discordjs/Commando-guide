@@ -1,6 +1,6 @@
-# RichEmbeds
+# RichEmbeds/MessageEmbeds
 
-You may have noticed that if you try to use a RichEmbed in your command, that there's no way to create the new embed, as `new Discord.RichEmbed()` is going to say `Discord` is undefined. That's because when using a RichEmbed, we need to require Discord.js alongside Commando.
+You may have noticed that if you try to use a RichEmbed \(or MessageEmbed for master\) in your command, that there's no way to create the new embed, as `new Discord.RichEmbed()` is going to say `Discord` is undefined. That's because when using a RichEmbed, we need to require Discord.js alongside Commando.
 
 ```js
 const { Command } = require('discord.js-commando');
