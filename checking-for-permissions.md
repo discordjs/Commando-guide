@@ -15,9 +15,9 @@ run(msg, args) {
 Now, obviously the message delete is going to fail if the command is used without permission to Manage Messages. So, we need to perform a check before the command is run. We're also going to set this check to only run if the channel is not a DM, as in DM we do not need to check for permissions and it will error if we do.
 
 ```js
-if (msg.channel.type !== 'dm')
-    if (!msg.channel.permissionsFor(this.client.user).has('MANAGE_MESSAGES'))
-        return msg.say('Error! I don\'t have permission to Manage Messages!');
+if (msg.channel.type !== 'dm') {
+    if (!msg.channel.permissionsFor(this.client.user).has('MANAGE_MESSAGES')) return msg.say('Error! I don\'t have permission to Manage Messages!');
+}
 ```
 
 Yeah, it's a little long, but this will prevent those pesky errors from popping up if the bot doesn't have permission to do something.
@@ -26,12 +26,12 @@ Place it in your `run` as the first thing done.
 
 ```js
 run(msg, args) {
-    if (msg.channel.type !== 'dm')
-        if (!msg.channel.permissionsFor(this.client.user).has('MANAGE_MESSAGES'))
-            return msg.say('Error! I don\'t have permission to Manage Messages!');
+    if (msg.channel.type !== 'dm') {
+        if (!msg.channel.permissionsFor(this.client.user).has('MANAGE_MESSAGES')) return msg.say('Error! I don\'t have permission to Manage Messages!');
+    }
     const { text } = args;
     msg.delete();
-    return msg.say(`\u180E${text}`);
+    return msg.say(text);
 }
 ```
 
