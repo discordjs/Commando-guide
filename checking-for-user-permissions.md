@@ -44,12 +44,9 @@ module.exports = class SayCommand extends Command {
     }
 
     run(msg, args) {
-        if (msg.channel.type !== 'dm')
-            if (!msg.channel.permissionsFor(this.client.user).has('MANAGE_MESSAGES')) 
-                return msg.say('Error! I don\'t have permission to Manage Messages!');
         const { text } = args;
         msg.delete();
-        return msg.say(`\u180E${text}`);
+        return msg.say(text);
     }
 };
 ```
