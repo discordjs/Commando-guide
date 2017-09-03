@@ -2,12 +2,12 @@
 
 When you got your first bot up and running with Discord.js, you should've installed Discord.js using npm, Node.js' Package Manager. The same applies to Commando, which must be separately installed. You can do this in one of two ways:
 
-Stable: `npm i -S discord.js-commando`  
+Stable: `npm i -S gawdl3y/discord.js-commando#11.2`  
 Master: `npm i -S gawdl3y/discord.js-commando`
 
-Master is usually preferred due to having more features, but stable is usually less likely to contain bugs.
+stable is usually preferred due to being more stable, but master is usually less likely to contain bugs.
 
-Also note that you are going to need Node 7 instead of Node 6. Download Node 7 [here](https://nodejs.org/en/).
+Also note that you are going to need Node 7 instead of Node 6. Download Node 7 [here](https://nodejs.org/en/). If on master, you'll be needing even further with Node 8.
 
 #### Creating Your index.js File
 
@@ -76,6 +76,7 @@ Next, we're going to create a ready event, which is about the same as the one in
 client.on('ready', () => {
     console.log('Logged in!');
     client.user.setGame('Game');
+    // or if on master, client.user.setActivity('game');
 });
 ```
 
