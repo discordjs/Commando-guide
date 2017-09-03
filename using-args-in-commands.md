@@ -80,7 +80,7 @@ run(msg, args) {
 }
 ```
 
-And there we have it, a say command using args! Let's spruce it up a little with a Zero-Width Space.
+And there we have it, a say command using args!
 
 ```js
 const { Command } = require('discord.js-commando');
@@ -106,7 +106,7 @@ module.exports = class SayCommand extends Command {
     run(msg, args) {
         const { text } = args;
         msg.delete();
-        return msg.say(`\u180E${text}`);
+        return msg.say(text);
     }
 };
 ```
