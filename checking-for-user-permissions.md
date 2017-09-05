@@ -1,6 +1,3 @@
-
----
-
 # User Permissions
 
 In the last chapter we talked about how to check for bot permissions, in this chapter, we're going to be using a `hasPermission` method and the `userPermissions` option to check whether or not the user is the owner or has a certain permission before using the command.
