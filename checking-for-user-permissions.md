@@ -43,8 +43,7 @@ module.exports = class SayCommand extends Command {
         return this.client.isOwner(msg.author);
     }
 
-    run(msg, args) {
-        const { text } = args;
+    run(msg, { text }) {
         msg.delete();
         return msg.say(text);
     }

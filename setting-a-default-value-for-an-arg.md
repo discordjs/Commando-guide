@@ -45,7 +45,6 @@ args: [
 This sets the default to `''`, which is falsey. Then, in your run, you can handle that.
 
 ```js
-const { value } = args;
 if (!value) {
 // do this
 } else {

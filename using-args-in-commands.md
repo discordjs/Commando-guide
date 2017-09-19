@@ -53,19 +53,17 @@ See? Simple.
 `prompt` is the text that displays if no argument is provided. For example: someone just uses `<prefix>say`. That prompt will come up asking for the text.  
 `type` is the type the argument is a part of. This can be many things, including `string`, `integer`, `user`, `member`, you get the idea. We'll go over more of these later.
 
-Now, head on over to your `run` method and, firstly, define args and set our `text` arg to a variable.
+Now, head on over to your `run` method and, firstly, set our `text` arg to a variable.
 
 ```js
-run(msg, args) {
-    const { text } = args;
+run(msg, { text }) {
 }
 ```
 
 Next, let's make the `run` method return the message.
 
 ```js
-run(msg, args) {
-    const { text } = args;
+run(msg, { text }) {
     return msg.say(text);
 }
 ```
@@ -73,8 +71,7 @@ run(msg, args) {
 Let's also make it delete our original message before saying it.
 
 ```js
-run(msg, args) {
-    const { text } = args;
+run(msg, { text }) {
     msg.delete();
     return msg.say(text);
 }
@@ -103,8 +100,7 @@ module.exports = class SayCommand extends Command {
         });    
     }
 
-    run(msg, args) {
-        const { text } = args;
+    run(msg, { text }) {
         msg.delete();
         return msg.say(text);
     }
