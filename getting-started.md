@@ -2,18 +2,18 @@
 
 When you got your first bot up and running with Discord.js, you should've installed Discord.js using npm, Node.js' Package Manager. The same applies to Commando, which must be separately installed. You can do this in one of two ways:
 
-Stable: `npm i -S gawdl3y/discord.js-commando#11.2`  
-Master: `npm i -S gawdl3y/discord.js-commando`
+Stable: `npm i -S discordjs/Commando#11.2`  
+Master: `npm i -S discordjs/Commando`
 
-stable is usually preferred due to being more stable, but master is usually less likely to contain bugs.
+If you're using Discord.js master, you'll need Commando master, and vice-versa.
 
-Also note that you are going to need Node 7 instead of Node 6. Download Node 7 [here](https://nodejs.org/en/). If on master, you'll be needing even further with Node 8.
+Also note that you are going to need at least Node.js version 7.6.0. Download Node [here](https://nodejs.org/en/). If on master, you'll need at least Node 8.
 
 #### Creating Your index.js File
 
 While it doesn't have to be called `index.js`, the index file is your main file for your bot, which handles everything from registering new commands to logging in your client. It's quite similar to standard Discord.js in many ways, but there are a few extra steps that need to be done to get your bot up and running.
 
-First thing is to require Commando. Contrary to what you may think, you do **not** need to require Discord.js to use Commando. That is, unless you are going to use a RichEmbed, but more on that later.
+First thing is to require Commando. Contrary to what you may think, you do **not** need to require Discord.js to use Commando. That is, unless you are going to use a MessageEmbed, but more on that later.
 
 For now, simply require Commando. We'll also be requiring `path` for use later on. Don't worry, you don't have to install `path`.
 
@@ -36,7 +36,7 @@ Looks quite similar to your Discord.js Client doesn't it? Well, aside from all t
 
 In `commandPrefix`, you should insert the prefix you intend to have for your bot. As of writing, you can only have one, so choose wisely! However, note that a mention will **always** be allowed alongside your prefix you set here. In other words, this prefix and mentions are how you will use your bot. **No, there is no way to disable mentions being a prefix!**
 
-After that is the `owner` field, which should contain the User ID for the owner of the bot. **The user you set here has complete control over the bot, can use eval and other Owner-Only Commands, and ignores command throttling!** So, be sure to only give this to yourself.  
+After that is the `owner` field, which should contain the User ID for the owner of the bot. **The user you set here has complete control over the bot, can use eval and other Owner-Only Commands, and ignores command throttling and user permissions!** So, be sure to only give this to yourself.  
 Also, if you installed master earlier, this can also be an array of IDs instead of a single one.
 
 ```js
@@ -75,8 +75,7 @@ Next, we're going to create a ready event, which is about the same as the one in
 ```js
 client.on('ready', () => {
     console.log('Logged in!');
-    client.user.setGame('Game');
-    // or if on master, client.user.setActivity('game');
+    client.user.setActivity('game');
 });
 ```
 
@@ -123,7 +122,7 @@ client.registry
 
 client.on('ready', () => {
     console.log('Logged in!');
-    client.user.setGame('Game');
+    client.user.setActivity('game');
 });
 
 client.login('Your Secret Token');
