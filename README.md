@@ -4,7 +4,7 @@ So I noticed there are very few resources to begin using the Commando command fr
 
 #### Before You Begin
 
-Before you start with this guide I recommend you take a look at York's Discord.js guide. It'll teach you the fundamentals for Discord.js, which you can use to aid you in understanding this guide. Please note that I'm going to assume you have read that guide before this one. You can find York's guide [here](https://www.gitbook.com/book/yorkaargh/discordjs-bot-guide/details).
+Before you start with this guide I recommend you take a look at the official Discord.js guide. It'll teach you the fundamentals for Discord.js, which you can use to aid you in understanding this guide. Please note that I'm going to assume you have read that guide before this one. You can find that guide [here](http://discordjs.guide/).
 
 #### More Information
 
@@ -13,6 +13,4 @@ Should you need more help after using this guide be sure to the Discord.js Offic
 #### Updating of this Guide
 
 I will create a new chapter every once in a while until I deem this tutorial complete. Should anything else come up that you think I should explain, feel free to ask for it to be implemented.
-
-
 
